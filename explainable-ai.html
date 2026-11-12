@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explainable AI</title>
+
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            color: #222;
+            background-color: #fafafa;
+        }
+
+        nav {
+            background: white;
+            padding: 15px 20px;
+            margin: 20px 0 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            background-color: #eaf4fb;
+            color: #0078d4;
+        }
+
+        nav a.active {
+            background-color: #0078d4;
+            color: white;
+        }
+
+        main {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #0078d4;
+            margin-top: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .intro {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        section {
+            background: #fdfdfd;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 1.3rem;
+            margin-top: 0;
+        }
+
+        section p {
+            color: #555;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer p {
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="ai.html">Artificial Intelligence</a>
+        <a href="machine-learning.html">Machine Learning</a>
+        <a href="stress-detection.html">AI and Stress Detection</a>
+        <a href="explainable-ai.html" class="active">Explainable AI</a>
+        <a href="references.html">References</a>
+    </nav>
+
+    <main>
+
+        <h1>Explainable AI</h1>
+
+        <p class="intro">
+            Explainable AI (XAI) is an area of artificial intelligence focused on making the decisions and predictions of AI systems easier for people to understand and interpret
+        </p>
+
+        <section>
+            <h2>What XAI is</h2>
+            <p>
+                <i><strong>Explainable AI (XAI)</i></strong> – Methods that help people understand the outputs or behaviour of an AI or
+                machine-learning system.
+                <ul>
+                    <li>Can be particularly useful when a model produces a result but its internal decision-making process is difficult
+                        for a person to understand.</li>
+                </ul>
+                
+                <i><strong>Black-Box Model</i></strong> – A model whose internal processes are difficult to interpret directly.
+                <ul>
+                    <li>An explanation method can provide information about how the model behaved for a particular prediction.</li>
+                </ul>
+                
+                <i><strong>Interpretability</strong> – How understandable a model or its behaviour is to a person.</i>
+                <ul>
+                    <li>Different models and explanation methods can provide different levels and types of understanding.</li>
+                    <li>For SAGEXP, explainability is important because a user may want to understand more than simply being told that a
+                        stress-related prediction has been made.</li>
+                </ul>
+
+            </p>
+        </section>
+
+        <section>
+            <h2>Post-hoc explanations</h2>
+            <p>
+                <i><strong>Post-hoc Explanation</strong> – Produced after a machine-learning model has already been trained. </i>
+                <ul>
+                    <li>Instead of changing the original model, the explanation method examines its inputs and outputs to provide an
+                        understandable description of a prediction.</li>
+                </ul>
+                
+                These are useful when the original model is already built and cannot easily be understood by looking directly at its
+                internal structure.
+                <ul>
+                    <li>For SAGEXP, a model receives several physiological measurements, it produces a stress-related classification.
+                    </li>
+                </ul>
+                
+                Post-hoc explanations can make a complex model's output easier to discuss without requiring the user to understand the
+                model's full mathematical structure.
+                <ul>
+                    <li>However, a post-hoc explanation should not automatically be treated as a perfect description of the model's
+                        internal reasoning.</li>
+                    <li>Some explanation methods approximate model behaviour and have limitations.</li>
+                </ul>
+
+            </p>
+        </section>
+
+        <section>
+            <h2>Types of Post-Hoc explanations</h2>
+            <p>
+                <strong>LIME (Local Interpretable Model-Agnostic Explanations)</strong>
+                        <ul>
+                            <li>Focuses on one prediction. </li>
+                            <li>Creates small variations around the input being examined, observes how the original model's prediction
+                                changes, and uses a simpler model to approximate the original model's behaviour in that area. </li>
+                        </ul>
+                
+                        <strong>SHAP (SHapley Additive exPlanations)</strong>
+                        <ul>
+                            <li>Assigns contribution values to features for a prediction.</li>
+                            <li>These values are intended to show how individual features of an input contributed to the model's output.
+                            </li>
+                        </ul>
+
+            </p>
+        </section>
+
+        <section>
+            <h2>Local vs Global explanations</h2>
+            <p>
+                <strong>Local Explanation</strong> – Focuses on one specific prediction and aims to explain why the model produced that
+                particular result for that particular input.
+                <ul>
+                    <li>A local explanation is similar to asking, “Why did the model make this decision this time?”</li>
+                </ul>
+                
+                <strong>Global Explanation</strong> – Looks at the model's behaviour more broadly and aims to describe general patterns in how the model
+                makes predictions.
+                <ul>
+                    <li>A global explanation is more like asking, “How does this model generally make decisions?”</li>
+                </ul>
+                
+                For SAGEXP, local explanations are particularly relevant because the user may want to understand a specific stress
+                classification produced from their current measurements.
+
+            </p>
+        </section>
+
+        <section>
+            <h2>The limits of AI explanations</h2>
+            <p>
+                AI explanations have many limitations, post-hoc explanations can be approximations of model behaviour rather than a
+                direct view of everything happening inside the model. <br><i>Therefore:</i>
+                <ul>
+                    <li>An explanation <strong>does not</strong> guarantee that the model's prediction is correct.
+                        <ul>
+                            <li>A model can make an incorrect prediction and still produce an explanation for it.</li>
+                        </ul>
+                    </li>
+                    <li>Different explanation methods can produce different forms of information, and no single method is guaranteed to
+                        provide a complete understanding of every model.</li>
+                    <li>A local explanation only describes a particular prediction.
+                        <ul>
+                            <li>It should not automatically be treated as a complete description of how the model behaves in every
+                                situation.</li>
+                        </ul>
+                    </li>
+                <br>
+                There is also a difference between giving an explanation and giving a useful explanation.
+                    <ul>
+                        <li>For a general user, an explanation needs to communicate relevant information clearly without requiring
+                            technical knowledge.</li>
+                        <li>For SAGEXP, this means an explanation should help the user understand what the classification means and what
+                            information contributes to the conclusions made.</li>
+                    </ul>
+
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Richelle Acheampong, Summer Scholarships for Black Students 2026</p>
+    </footer>
+
+</body>
+
+</html>
