@@ -1,16 +1,24 @@
 cff-version: 1.2.0
-message: "If you use this web artifact, please cite the accompanying paper as specified below."
+message: "If you use this web artifact, please cite the accompanying record as specified below."
 authors:
   - family-names: "Acheampong"
     given-names: "Richelle"
 title: "SAGEXP Knowledge Base"
 version: 1.0.0
 date-released: 2026-11-09
-url: "https://richelle-a.github.io/sagex-educational-website"
-repository-code: "https://github.com.richelle-a/sagexp-educational-website"
 keywords:
   - "SAGEXP"
   - "Artificial Intelligence"
   - "Machine Learning"
   - "Explainable AI"
   - "Stress Detection"
+preferred-citation:
+  type: generic
+  authors:
+    - family-names: "Acheampong"
+      given-names: "Richelle"
+  title: "SAGEXP Knowledge Base"
+  year: 2026
+  publisher:
+    name: "Knowledge Media Institute, The Open University"
+  url: "https://oro.open.ac.uk/112560/"
