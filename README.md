@@ -6,7 +6,7 @@ This repository contains the official interactive web version of the publication
 
 This knowledge base was developed as part of the SAGEXP (Stress Awareness and Generative Explanations) project to improve understanding of Artificial Intelligence (AI), Machine Learning (ML), stress detection, and Explainable Artificial Intelligence (XAI). The website serves as both an educational resource and a knowledge base for the wider SAGEXP system.
 
-👉 **Live Publication Site:** https://kmi-scholarship-2026.github.io/sagex-educational-website/
+👉 **Live Publication Site:** https://kmi-scholarship-2026.github.io/sagexp-educational-website/
 
 ## 📜 License
 The source code and web layout configuration files in this repository are open-source and licensed under the **MIT License**. See the `LICENSE` file for details.
