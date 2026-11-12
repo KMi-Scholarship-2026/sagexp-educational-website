@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning</title>
+
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            color: #222;
+            background-color: #fafafa;
+        }
+
+        nav {
+            background: white;
+            padding: 15px 20px;
+            margin: 20px 0 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            background-color: #eaf4fb;
+            color: #0078d4;
+        }
+
+        nav a.active {
+            background-color: #0078d4;
+            color: white;
+        }
+
+        main {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #0078d4;
+            margin-top: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .intro {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        section {
+            background: #fdfdfd;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 1.3rem;
+            margin-top: 0;
+        }
+
+        section p {
+            color: #555;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer p {
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="ai.html">Artificial Intelligence</a>
+        <a href="machine-learning.html" class="active">Machine Learning</a>
+        <a href="stress-detection.html">AI and Stress Detection</a>
+        <a href="explainable-ai.html">Explainable AI</a>
+        <a href="references.html">References</a>
+    </nav>
+
+    <main>
+
+        <h1>Machine Learning</h1>
+
+        <p class="intro">
+            Machine learning (ML) is a branch of artificial intelligence where computer systems learn from data to identify patterns and make decisions or predictions without being explicitly programmed for every scenario.
+        </p>
+
+        <section>
+            <h2>History of ML</h2>
+            <p>
+                Machine learning developed from earlier work in statistics, pattern recognition and computer-based decision-making.
+                Early machine-learning research included methods for recognising patterns and making predictions.
+                <ul>
+                    <li>Researchers explored ways for computers to learn useful patterns from data rather than relying entirely on rules written by people.</li>
+                    <li>Rule-based machine learning and decision rules also became important parts of the field during the 20th century.
+                    </li>
+                </ul>
+                
+                As research progressed, machine learning increasingly focused on algorithms that could build models from example data.
+                Instead of specifying every decision directly, a programmer could provide data and a learning method.
+                <ul>
+                    <li>During the later 20th century, machine-learning methods were developed for pattern recognition, prediction and
+                        classification.
+                        <ul>
+                            <li>These methods became increasingly useful as computing resources and digital data increased.</li>
+                        </ul>
+                    </li>
+                    <li>By the 2000s and 2010s, machine learning had become widely used across technology and research.</li>
+                    <li>It is now applied to text, images, speech, medical information, finance, recommendation systems and many other orms of data.</li>
+                </ul>
+                In SAGEXP, the wearable's classifier follows the main idea of machine learning: learning patterns from examples so that a trained model can make predictions about new measurements.
+            </p>
+        </section>
+
+        <section>
+            <h2>How ML works</h2>
+            <p>
+                Machine learning allows a computer to learn patterns from data and examples instead of being given complete step-by-step
+                rules for every possible situation
+                <ul>
+                    <li>During training, it adjusts internal parameters so that predictions become closer to known outcomes in the training data.</li>
+                    <li>Once trained, the model can receive new data it has not previously seen and use what it learned to produce a prediction.</li>
+                    <br>
+                    The Process
+                    <ol>
+                        <li><strong>Data preprocessing</strong>: raw data is cleaned, organised and converted into a form suitable for the model.</li>
+                        <li><strong>Training</strong>: the model learns patterns or relationships from training examples.</li>
+                        <li><strong>Evaluation</strong>: the model is checked using separate data to see whether it can make useful predictions on examples it did not learn from.</li>
+                        <li><strong>Optimisation</strong>: the model or its settings can be refined to improve performance.</li>
+                    </ol>
+                <br>
+                Machine-learning predictions are often probabilistic rather than absolute. A model may indicate how strongly the available evidence supports one category rather than claiming its prediction is certain.
+            </p>
+        </section>
+
+        <section>
+            <h2>Types of ML</h2>
+            <p>
+                <strong>Unsupervised Learning</strong>: The model works with data without pre-existing labels and looks for patterns or groups within the data.<br>
+                
+                <strong>Reinforcement Learning</strong>: The system learns through interaction by taking actions and receiving feedback in the form of rewards.<br>
+                
+                <strong>Supervised Learning</strong>: the model learns from labelled examples where the correct output is already known.
+                Includes 2 main categories:
+                <ul>
+                    <li>Classification – A supervised-learning task where the model predicts a category, such as a stress-related or
+                        non-stress category.</li>
+                    <li>Regression – A supervised-learning task where the model predicts a numerical value rather than a category.</li>
+                    <ul>
+                <br>
+                SAGEXP: The wearable stress-detection component is most directly related to supervised classification because the model is intended to classify physiological measurements into defined categories.
+            </p>
+        </section>
+
+        <section>
+            <h2>ML lifecycle</h2>
+            <p>
+                <ol>
+                    <li><strong>Data Management</strong>: Collect, prepare, label and check the quality of the data used to develop the model. Useful data should be relevant to the intended task and provide enough examples of situations the model is expected to encounter.</li>
+                    <li><strong>Model Learning</strong>: Choosing a suitable model and training it using the prepared data.</li>
+                    <li><strong>Model Verification</strong>: Testing the trained model using separate data to assess whether it works on examples not used for training.</li>
+                    <li><strong>Model Deployment</strong>: integrate the verified model into the wider system and monitor it after it is put into use.</li>
+                </ol>
+                
+                The lifecycle is iterative rather than strictly linear. If a model performs poorly, researchers may return to an earlier stage, such as improving the data or changing the model.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Richelle Acheampong, Summer Scholarships for Black Students 2026</p>
+    </footer>
+
+</body>
+
+</html>

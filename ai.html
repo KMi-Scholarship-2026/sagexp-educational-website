@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence</title>
+
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            color: #222;
+            background-color: #fafafa;
+        }
+
+        nav {
+            background: white;
+            padding: 15px 20px;
+            margin: 20px 0 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            background-color: #eaf4fb;
+            color: #0078d4;
+        }
+
+        nav a.active {
+            background-color: #0078d4;
+            color: white;
+        }
+
+        main {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #0078d4;
+            margin-top: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .intro {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        section {
+            background: #fdfdfd;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 1.3rem;
+            margin-top: 0;
+        }
+
+        section p {
+            color: #555;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer p {
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="ai.html" class="active">Artificial Intelligence</a>
+        <a href="machine-learning.html">Machine Learning</a>
+        <a href="stress-detection.html">AI and Stress Detection</a>
+        <a href="explainable-ai.html">Explainable AI</a>
+        <a href="references.html">References</a>
+    </nav>
+
+    <main>
+
+        <h1>Artificial Intelligence</h1>
+
+        <p class="intro">
+            Artificial intelligence (AI) developed from the idea that computers could perform tasks associated with aspects of human
+            intelligence, such as reasoning, problem-solving and decision-making.
+        </p>
+
+        <section>
+            <h2>History of AI</h2>
+            <p>
+                Artificial intelligence (AI) developed from the idea that computers could perform tasks associated with aspects of human
+                intelligence, such as reasoning, problem-solving and decision-making.
+                
+                Early AI systems often relied on rules written by people. These systems could work well when problems were clearly
+                defined, but could struggle when situations did not fit the rules provided.
+                
+                <ul>
+                <li><strong>1950</strong>: Alan Turing explored whether machines could demonstrate intelligent behaviour in Computing Machinery and
+                Intelligence.</li>
+                    <ul><li>He proposed the Turing Test as a way of considering machine intelligence.</li></ul>
+                
+                <li><strong>1956</strong>: The Dartmouth Summer Research Project on Artificial Intelligence helped establish AI as a formal research area and
+                the term “Artificial Intelligence” became associated with this work.
+                
+                <li><strong>1966</strong>: Joseph Weizenbaum creates ELIZA, an early conversational chatbot</li>
+                
+                <li><strong>1970s</strong>: Interest and funding for AI crashed because computers back then weren't powerful enough. This period is known as
+                the first "AI Winter."</li>
+                
+                <li><strong>1980s</strong>: AI made a return using specialised software (called “expert systems”) that acted like a digital consultant for
+                specific, niche tasks.</li>
+                
+                AI has continued to expand into language, image recognition, decision-making and wearable technology. Modern AI research
+                also places increasing emphasis on evaluating how capable, reliable and responsible AI systems are.
+                </ul>
+            </p>
+        </section>
+
+        <section>
+            <h2>Types of AI</h2>
+            <p>
+                There are different types of AI, which can be categorised based on their capabilities and applications. The main types include:
+                <ul>
+                <li><strong>Artificial Narrow Intelligence</strong>: AI designed to perform a particular task or limited set of tasks.</li>
+                <ul>
+                    <li>Examples include recommendation systems, image-recognition systems and classification systems.</li>
+                
+                    <li><strong>SAGEXP</strong>: the wearable stress-classification component is most closely described as narrow AI because it has a specific purpose.</li>
+                </ul>
+                <li><strong>Artificial General Intelligence</strong> Form of AI able to perform a broad range of intellectual tasks rather than being
+                limited to one application.</li>
+                
+                <li><strong>Artificial Superintelligence</strong>: Form of AI that would exceed human intellectual capabilities across a broad range of
+                tasks.</li>
+                </ul>
+
+            </p>
+        </section>
+
+        <section>
+            <h2>AI vs Machine Learning</h2>
+            <p>
+                Artificial intelligence is the broader term for computer systems designed to carry out tasks associated with human
+                intelligence, including reasoning, learning, planning, perception and communication.
+                <ul>
+                    <li>Does not have to learn from data. Some AI systems can rely on rules, logic or other explicitly designed methods.
+                    </li>
+                </ul>
+                Machine learning (ML) is a subset of AI. Rather than requiring a programmer to write every rule, a machine-learning
+                model learns patterns or relationships from examples in data.
+                <ul>
+                    <li>AI and ML are related but aren not interchangeable terms
+                        <ul>
+                            <li>Machine learning is one approach that can be used to build AI systems.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                For SAGEXP, the wearable's classifier uses machine learning to analyse physiological information, while the wider system
+                also includes an AI-based explanation component.
+
+            </p>
+        </section>
+
+        <section>
+            <h2>Real-world AI applications (SAGEXP)</h2>
+            <p>AI is used in applications including recognising patterns in images, understanding language, making recommendations and
+            supporting decision-making.
+            
+            In SAGEXP, AI-related technologies have different roles rather than performing the same job.
+            <ul>
+                <li>Wearable device: collects physiological data and uses a machine-learning classifier to determine whether the
+                    measurements are indicative of a stress response.</li>
+                <li>Generative AI Explanation Assistant: receives the classification result and relevant model information and uses
+                    the educational website as a knowledge base when generating explanations.</li>
+                <li>Educational Website: provides accessible background information about AI, machine learning, stress detection and
+                    explainable AI.</li>
+            </ul>
+            
+            The wearable performs sensing and classification, while the explanation assistant is responsible for
+            communicating and explaining the result.
+
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Richelle Acheampong, Summer Scholarships for Black Students 2026</p>
+    </footer>
+
+</body>
+
+</html>

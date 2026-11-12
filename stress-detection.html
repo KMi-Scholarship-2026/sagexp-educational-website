@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI and Stress Detection</title>
+
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            color: #222;
+            background-color: #fafafa;
+        }
+
+        nav {
+            background: white;
+            padding: 15px 20px;
+            margin: 20px 0 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            background-color: #eaf4fb;
+            color: #0078d4;
+        }
+
+        nav a.active {
+            background-color: #0078d4;
+            color: white;
+        }
+
+        main {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #0078d4;
+            margin-top: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .intro {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        section {
+            background: #fdfdfd;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 1.3rem;
+            margin-top: 0;
+        }
+
+        section p {
+            color: #555;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer p {
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="homepage.html">Home</a>
+        <a href="ai.html">Artificial Intelligence</a>
+        <a href="machine-learning.html">Machine Learning</a>
+        <a href="stress-detection.html" class="active">AI and Stress Detection</a>
+        <a href="explainable-ai.html">Explainable AI</a>
+        <a href="references.html">References</a>
+    </nav>
+
+    <main>
+
+        <h1>AI and Stress Detection</h1>
+
+        <p class="intro">
+            Stress detection involves identifying physiological changes in the body that may be associated with a person's stress response, using signals such as heart activity, skin conductance, breathing and body temperature.
+        </p>
+
+        <section>
+            <h2>Stress Detection</h2>
+            <p>
+                <i><strong>Stress Detection</strong></i> – identifying stress-related states by measuring changes in the body that can occur during a
+                stress response.
+                <ul>
+                    <li>When a person experiences a stressor, physiological systems can change. </li>
+                    <li>These changes can include alterations in heart activity, sweating, breathing, temperature and muscle activity.
+                    </li>
+                </ul>
+                
+                Wearable stress-detection research began exploring whether these physiological changes could be detected outside
+                clinical settings in the early 2000s. <br>
+                
+                <br>Research has increasingly considered individual differences because people
+                can respond differently to the same situation.
+                <ul>
+                    <li>A key limitation is that physiological responses are not unique to stress.</li>
+                    <li>For example, increased heart activity can occur during exercise as well as emotional stress.</li>
+                </ul>
+                
+                A wearable is therefore detecting physiological patterns associated with stress rather than directly measuring a
+                person's thoughts or feelings
+
+            </p>
+        </section>
+
+        <section>
+            <h2>AI for stress detection</h2>
+            <p>
+                AI and machine-learning methods can analyse physiological measurements and identify patterns associated with stress.
+                <ul>
+                    <li>A typical approach can involve collecting physiological signals, cleaning raw measurements, calculating useful
+                        features, training a model and evaluating its predictions.</li>
+                    <li>The model can learn from labelled examples and then use learned patterns to classify new measurements.</li>
+                    <li>The quality of the input data matters. Noisy signals, movement and differences between individuals can make the
+                        task more difficult.</li>
+                    <li>Traditional machine-learning approaches have been widely used in wearable stress-detection research,
+                        particularly where models need to work with physiological features.</li>
+                    <li>A model's accuracy should not be considered on its own. <ul>
+                            <li>It is also important to consider whether it works on new people or real-world situations and whether its
+                                predictions can be appropriately interpreted</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </p>
+        </section>
+
+        <section>
+            <h2>Physiological Signals</h2>
+            <p>
+                <i><strong>Physiological</strong> – Relating to the normal physical functions of living organisms and their parts. It
+                    describes bodily processes and reactions</i>
+                <ul>
+                    <li>Stress can affect several physiological systems.</li>
+                    <li>Different signals provide different types of information, so combining several signals can sometimes give a
+                        fuller picture than relying on one signal alone</li>
+                </ul>
+                
+                There are many physiological signs that can be used to identify stress, including (but not limited to):
+                <ul>
+                    <li>Electrodermal Activity (EDA)</li>
+                    <li>Photoplethysmogram (PPG)</li>
+                    <li>Electrocardiogram (ECG)</li>
+                    <li>Body Temperature</li>
+                </ul>
+                
+                SAGEXP uses all 4 of these signs in the wearable to identify stress in the user<br><br>
+                
+                <i><strong>Electrodermal Activity (EDA)</i></strong> – Measures changes in the skin's electrical conductance.
+                <ul>
+                    <li>When sweat glands become more active, the skin can conduct electricity differently. </li>
+                    <li>Because sweat-gland activity is influenced by the sympathetic nervous system, EDA can provide information about
+                        physiological arousal associated with stress.</li>
+                </ul>
+                
+                <i><strong>Photoplethysmogram (PPG)</i></strong> – An optical technique that uses light to measure changes in blood
+                volume beneath the skin.
+                <ul>
+                    <li>Wearable devices can use PPG to obtain cardiovascular information, including heart rate.</li>
+                    <li>Useful for wearables because it can be measured at locations such as the wrist, although movement can affect the
+                        signal.</li>
+                </ul>
+                
+                <i><strong>Electrocardiogram (ECG)</i></strong> – Records the electrical activity of the heart using electrodes.
+                <ul>
+                    <li>Can provide information about heart activity and measures such as heart rate and changes in the timing between
+                        heartbeats.</li>
+                    <li>Wearable ECG measurements can be affected by movement and electrode placement.</li>
+                </ul>
+                
+                <i><strong>Body Temperature</i></strong> – Regulated by the body and can change as a result of physiological processes.
+                <ul>
+                    <li>Can provide additional information when studying changes in the body's response, but it is influenced by many
+                        factors and should not automatically be interpreted as evidence of stress.</li>
+                </ul>
+
+            </p>
+        </section>
+
+        <section>
+            <h2>Wearable AI for stress detection</h2>
+            <p>
+                Wearable devices can collect physiological signals continuously and non-invasively while a person goes about normal activities.
+                    <ul><li>The Process
+                        <ol>
+                            <li>Signal collection: sensors collect physiological measurements from the body.</li>
+                            <li>Signal cleaning: measurements may contain noise or artefacts caused by movement, the sensor or the
+                                surrounding environment, so preprocessing is often required.</li>
+                            <li>Feature extraction: useful characteristics are calculated from processed signals so the model can use
+                                them.</li>
+                            <li>Classification: the trained model analyses the features and produces a prediction about the
+                                stress-related category.</li>
+                        </ol>
+                    </li>
+                    <li>Using multiple signals can be useful because no single physiological measurement provides a complete picture of
+                        stress.</li>
+                </ul>
+
+            </p>
+        </section>
+
+        <section>
+            <h2>Limitations of AI for Stress Detection</h2>
+            <p>
+                <ul>
+                    <li>A model that performs well in a controlled experiment may not perform equally well in everyday life.<ul>
+                            <li>Real-world data can contain more movement, noise and variation between people.</li>
+                        </ul>
+                    </li>
+                    <li>Establishing the correct stress label, or 'ground truth', can be difficult because stress is subjective and physiological responses can have several possible causes.</li>
+                </ul>
+
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Richelle Acheampong, Summer Scholarships for Black Students 2026</p>
+    </footer>
+
+</body>
+
+</html>

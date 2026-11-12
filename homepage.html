@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAGEXP Knowledge Base</title>
+
+    <style>
+        :root {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+            color: #222;
+            background-color: #fafafa;
+        }
+
+        nav {
+            background: white;
+            padding: 15px 20px;
+            margin: 20px 0 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            background-color: #eaf4fb;
+            color: #0078d4;
+        }
+
+        nav a.active {
+            background-color: #0078d4;
+            color: white;
+        }
+
+        main {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #0078d4;
+            margin-top: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .intro {
+            color: #555;
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .section-card {
+            display: block;
+            background: #fdfdfd;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+            border-color: #0078d4;
+        }
+
+        .section-card h2 {
+            color: #0078d4;
+            font-size: 1.3rem;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .section-card p {
+            color: #555;
+            margin: 0;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer p {
+            color: #777;
+        }
+
+        @media (max-width: 650px) {
+            .section-grid {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="homepage.html" class="active">Home</a>
+        <a href="ai.html">Artificial Intelligence</a>
+        <a href="machine-learning.html">Machine Learning</a>
+        <a href="stress-detection.html">AI and Stress Detection</a>
+        <a href="explainable-ai.html">Explainable AI</a>
+        <a href="references.html">References</a>
+    </nav>
+
+    <main>
+
+        <h1>SAGEXP Knowledge Base</h1>
+
+        <p class="intro">
+            A beginner-friendly introduction to artificial intelligence, machine learning, stress detection and Explainable AI
+        </p>
+
+        <div class="section-grid">
+
+            <a href="ai.html" class="section-card">
+                <h2>Artificial Intelligence</h2>
+                <p>
+                    An introduction to AI, including its history, different types and how it is used today
+                </p>
+            </a>
+
+
+            <a href="machine-learning.html" class="section-card">
+                <h2>Machine Learning</h2>
+                <p>
+                    An introduction to machine learning, including how it works, its different types, and how it is used to analyse data
+                </p>
+            </a>
+
+
+            <a href="stress-detection.html" class="section-card">
+                <h2>AI and Stress Detection</h2>
+                <p>
+                    Explore how AI can be used to detect stress through physiological signals collected by wearable devices
+                </p>
+            </a>
+
+
+            <a href="explainable-ai.html" class="section-card">
+                <h2>Explainable AI</h2>
+                <p>
+                    Explore how AI decisions can be made easier to understand, including different approaches to explaining predictions
+                </p>
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Richelle Acheampong, Summer Scholarships for Black Students 2026</p>
+    </footer>
+
+</body>
+
+</html>
