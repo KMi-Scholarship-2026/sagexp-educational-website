@@ -21,8 +21,6 @@ If you build upon this work, adapt our HTML/CSS frameworks, reuse the web layout
 
 ### BibTeX
 
-For LaTeX users, you can use the following entry. It appends the live interactive deployment path directly onto the official project record:
-
 ```bibtex
 @misc{oro112560,
   title     = {SAGEXP Knowledge Base},
