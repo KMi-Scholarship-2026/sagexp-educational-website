@@ -27,10 +27,10 @@ If you build upon this work, adapt our HTML/CSS frameworks, reuse the web layout
   publisher = {Knowledge Media Institute, The Open University},
   year      = {2026},
   author    = {Acheampong, Richelle},
-  url       = {https://oro.open.ac.uk/112560/},
   keywords  = {SAGEXP; Artificial Intelligence; Machine Learning; Explainable AI; Stress Detection},
   note      = {KMi Supervisors: Tracie Farrell, Aisling Third, Nancy Pontika},
-  abstract  = {This knowledge base was developed as part of the SAGEXP (Stress Awareness and Generative Explanations) project to improve understanding of Artificial Intelligence (AI), Machine Learning (ML), stress detection, and Explainable Artificial Intelligence (XAI). Drawing on academic and educational sources, it provides clear and accessible explanations of key concepts, including machine learning classification techniques, physiological indicators of stress, and methods for explaining AI-generated predictions. The website serves as both an educational resource and a knowledge base for the wider SAGEXP system. By presenting complex concepts in an understandable manner, it aims to support AI literacy and help users better understand how AI-enabled stress detection technologies operate and how their predictions can be interpreted.}
+  abstract  = {This knowledge base was developed as part of the SAGEXP (Stress Awareness and Generative Explanations) project to improve understanding of Artificial Intelligence (AI), Machine Learning (ML), stress detection, and Explainable Artificial Intelligence (XAI). Drawing on academic and educational sources, it provides clear and accessible explanations of key concepts, including machine learning classification techniques, physiological indicators of stress, and methods for explaining AI-generated predictions. The website serves as both an educational resource and a knowledge base for the wider SAGEXP system. By presenting complex concepts in an understandable manner, it aims to support AI literacy and help users better understand how AI-enabled stress detection technologies operate and how their predictions can be interpreted.},
+  doi = {10.21954/ou.ro.00112560}
 }
 
 ```
