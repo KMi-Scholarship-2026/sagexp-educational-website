@@ -6,6 +6,7 @@ authors:
 title: "SAGEXP Knowledge Base"
 version: 1.0.0
 date-released: 2026-11-09
+doi: "10.21954/ou.ro.00112560"
 keywords:
   - "SAGEXP"
   - "Artificial Intelligence"
@@ -21,4 +22,4 @@ preferred-citation:
   year: 2026
   publisher:
     name: "Knowledge Media Institute, The Open University"
-  url: "https://oro.open.ac.uk/112560/"
+  doi: "10.21954/ou.ro.00112560"
